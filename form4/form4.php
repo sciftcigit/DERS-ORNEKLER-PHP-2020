@@ -4,7 +4,6 @@
     $hata_isim = $hata_mail = $hata_web = "";
     $boolean_isim = $boolean_mail = $boolean_web = false;
     
-
     // gelen veriyi temizleme ve güvenli hale getirme işlemi
     function veri_kontrol($data) {
         $data = trim($data);               // boşluk karakteri temizliği 
