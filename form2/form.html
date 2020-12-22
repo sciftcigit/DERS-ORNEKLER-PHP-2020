@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Kayıt Formu</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+<div style="text-align: center;">
+    <h2>Kayıt Formu</h2>
+
+    <form action="kaydet.php" method="POST">
+        <label for="f_ad">Ad :</label>
+        <input type="text" name="f_ad" id="f_ad">
+        <br>
+        <label for="f_soyad">Soyad</label>
+        <input type="text" name="f_soyad">
+        <br>
+        <label for="f_erkek">Erkek</label>
+        <input type="radio" id="f_erkek" name="f_cins" value="e">
+        <br>
+        <label for="f_kadin">Kadın</label>
+        <input type="radio" id="f_kadin" name="f_cins" value="k">
+        <br>
+        <label for="f_ogrenim">Öğrenim Durumu</label>
+        <select name="f_ogrenim" id="f_ogrenim">
+            <option value="-1"> --- Seçiniz --- </option>
+            <option value="1">İlkokul</option>
+            <option value="2">Ortaokul</option>
+            <option value="3">Lise</option>
+            <option value="4">Üniversite</option>
+        </select>
+        <br>
+        <label for="f_dyeri">Doğum Yeri</label>
+        <select name="f_dyeri" id="f_dyeri">
+            <option value="-1"> --- Seçiniz --- </option>
+            <option value="01">Adana</option>
+            <option value="09">Aydın</option>
+            <option value="24">Erzincan</option>
+            <option value="34">İstanbul</option>
+        </select>
+        <br>   
+        İlgi alanları : <br>
+        <label for="f_spor">Spor</label>
+        <input type="checkbox" name="f_spor" id="f_spor" value="true">
+        <br>
+        <label for="f_muzik">Müzik</label>
+        <input type="checkbox" name="f_muzik" id="f_muzik" value="true">
+        <br>
+        <label for="f_resim">Resim</label>
+        <input type="checkbox" name="f_resim" id="f_resim" value="true">
+        <br>
+        <label for="f_adres">Adres</label>
+        <textarea id="f_adres" name="f_adres"></textarea>
+        <br>
+        <input type="submit" value="Kaydet">
+    </form>
+</div>
+</body>
+</html>
