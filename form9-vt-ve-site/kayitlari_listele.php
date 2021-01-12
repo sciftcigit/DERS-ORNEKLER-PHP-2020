@@ -3,6 +3,9 @@
 
 include("inc_tools.php");
 
+html_baslik("Kayıtları Listeleme Ekranı");
+html_menu();
+
 // benim yazdığım veritabanına bağlanma fonksiyonu
 //  (inc_tools.php den çağırıyoruz.) 
 $baglanti =  db_connect();
@@ -31,4 +34,6 @@ if ($kayitlar->num_rows > 0) {
     echo "0 results";
 }
 $baglanti->close();
+
+html_dip();
 ?>
